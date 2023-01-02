@@ -1,0 +1,453 @@
+/*----------- Organizando los estilos en cascada -----------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.main-header {
+    background-color: #EAC326;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 40%;
+}
+
+.busqueda {
+    width: 50%;
+    position: relative;
+}
+
+.boton-busqueda {
+    text-align: center;
+    width: 15%;
+}
+
+.fa-magnifying-glass {
+    text-align: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.entero-busqueda {
+    height: 10%;
+}
+
+.copy-header {
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.hamburguer-button {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+}
+
+.imgybusqueda {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.busqueda {
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 70%;
+}
+
+.boton-busqueda {
+    height: 70%;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.busquedayboton {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin-top: 225px;
+}
+
+.baner {
+    display: none;
+}
+
+.main-h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.main-h3 h3 {
+    font-weight: bold;
+}
+
+.imagenesProductos {
+    width: 100%;
+}
+
+.descripcion {
+    display: none;
+}
+
+.precioydescuento {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.precios {
+    width: 30%;
+    font-size: 24px;
+}
+
+.descuentos {
+    width: 70%;
+    font-size: 16px;
+    color: green;
+}
+
+.articulodeoferta {
+    text-align: center;
+}
+
+.fa-truck {
+    color: rgba(0, 128, 0, 0.693);
+}
+
+.articulodeoferta .fa-truck{
+    margin-left: 80%;
+}
+
+.detalles {
+    text-align: center;
+}
+/*----Se define una única clase para todo lo que necesita el 100% de su ancho dentro de su caja contenedora-----*/
+.cienxcien {
+    width: 100%;
+}
+
+.div-copi {
+    text-align: center;
+}
+
+footer {
+    margin: 0px 0;
+}
+
+
+/* --- Formulario de Registro --- */
+.form-register {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-form {
+    margin: 20px;
+}
+
+.div-form a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.div-form input {
+    margin: 5px 0;
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    padding: 5px;
+}
+
+
+/* --- Ingreso con Login --- */
+
+.div-form-login {
+    margin: 15px 0;
+    text-align: center;
+
+}
+
+.div-form-login input {
+    width: 60%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.div-form-login button {
+    width: 80%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.769);
+}
+
+.div-form-login a {
+    color: white;
+    text-decoration: none;
+}
+
+/*--- @media queries --- */
+
+@media (min-width: 480px) {
+
+    /*--- Header---*/
+
+    .imgybusqueda {
+        height: 15vh;
+    }
+
+    /*--- Main --- */
+
+    main {
+        margin-top: 0px;
+    }
+
+    .articulos-main {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .articulodeoferta {
+
+        width: 50%;
+        text-align: center;
+    }
+
+    .baner {
+        display: block;
+        width: 100%;
+        margin-top: 205.13px;
+    }
+
+    /*--- Footer---*/
+
+    footer{
+        padding: 20px;
+        background-color: #EAC326;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .copy-header {
+        width: 100%;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+
+    .imgybusqueda {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .imgybusqueda .busqueda {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .busqueda {
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .boton-busqueda {
+        height: 50%;
+        align-items: center;
+        margin-top: 5%;
+        width: 10%;
+    }
+
+    .busquedayboton {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .baner {
+        display: block;
+        width: 100%;
+        margin-top: 182.13px;
+    }
+
+
+    .precioydescuento {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .precios {
+        font-size: 20px;
+    }
+
+    .descuentos {
+        width: 50%;
+    }
+
+    .descripcion {
+        display: none;
+    }
+
+    .articulodeoferta:hover .descripcion {
+        display: block;
+    }
+
+
+    .articulos-main {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .articulodeoferta:hover {
+        box-shadow: 0px 3px 10px black;
+    }
+
+    .articulodeoferta {
+
+        width: 23%;
+        text-align: center;
+    }
+
+    .fa-truck {
+        transition: 0.5s;
+    }
+
+    .articulodeoferta:hover .fa-truck {
+
+        transform: rotateZ(-30deg) translateX(5px);
+    }
+
+    footer {
+
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #EAC326;
+        padding: 30px;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+
+    .detalles {
+        width: 30%;
+    }
+
+    .detalles i{
+        width: 100%;
+    }
+
+    .detalles:hover i{
+        color: #0022AA;
+    }
+
+    .detalles:hover strong{
+        color: #0022AA;
+    }
+
+    .div-copi {
+        width: 100%;
+    }
+
+    .copi {
+        margin: 0;
+    }
+    
+    .send:hover {
+        background-color: #0022AA;
+        color: white;
+    }
+
+    .form-register{
+align-items: center;
+    }
+
+    .div-form{
+        width: 50%;
+    }
+
+    .btn {
+        background-color: #1259c3;
+        color: white;
+        width: 63%;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+      }
+      .btn:hover {
+        background-color: #03264C;
+      }
+
+}
