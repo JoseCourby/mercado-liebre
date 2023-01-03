@@ -4,11 +4,10 @@ const path = require("path")
 
 app.use(express.static(path.join(__dirname, "public")))
 
-
-app.listen(3007, function(){
-console.log('El localhost 3007 se prendió correctamente!')
-})
-
+const PORT = process.env.PORT || 3007;
+app.listen(PORT, () => {
+  console.log(`Se prendió en el puerto ${PORT}`);
+});
 
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, "./views/index.html"))
